@@ -15,3 +15,8 @@ Recommend next actions - Suggest investigation steps and potential containment a
 ## System Role Prompt
 
 Format output clearly - Return findings in a structured format (Summary, IOC Enrichment, Severity Assessment, Recommended Actions).
+
+## User Role Prompt
+
+Alert: {{ $json.body.search_name }}
+Alert Details: {{ JSON.stringify($json.body.result,null,2) }}
